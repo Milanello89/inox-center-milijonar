@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>INOX CENTER Milijonar</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="header">
+    <h1>INOX CENTER Milijonar</h1>
+  </header>
+  <main class="main">
+    <section id="menu" class="menu">
+      <h2>Dobrodošli v kvizu!</h2>
+      <p>Preizkusi svoje znanje o inoxu, aluminiju, varjenju in tolerancah.</p>
+      <input type="text" id="playerName" placeholder="Vnesi svoje ime" />
+      <div>
+        <button id="startBtn" class="btn primary">Začni igro</button>
+        <button id="leaderboardBtn" class="btn secondary">Poglej lestvico najboljših</button>
+      </div>
+    </section>
+
+    <section id="game" class="game hidden">
+      <div class="status">
+        <span id="questionNumber">1/15</span>
+        <span id="scoreDisplay">Točke: 0</span>
+      </div>
+      <div id="questionContainer" class="question-container">
+        <h3 id="questionText">Vprašanje se naloži ...</h3>
+        <ul id="answerList" class="answers"></ul>
+      </div>
+      <div class="lifelines">
+        <button id="fiftyBtn" class="btn lifeline">50:50</button>
+        <button id="audienceBtn" class="btn lifeline">Pomoč občinstva</button>
+        <button id="friendBtn" class="btn lifeline">Klic prijatelja</button>
+      </div>
+    </section>
+
+    <section id="result" class="result hidden">
+      <h2>Konec igre</h2>
+      <p id="resultMessage">Dosegli ste 0 točk!</p>
+      <div>
+        <button id="playAgainBtn" class="btn primary">Igraj znova</button>
+        <button id="viewLeaderboardBtn" class="btn secondary">Lestvica najboljših</button>
+      </div>
+    </section>
+
+    <section id="leaderboard" class="leaderboard hidden">
+      <h2>Lestvica najboljših</h2>
+      <div id="leaderboardContent">Nalaganje ...</div>
+      <button id="backBtn" class="btn secondary">Nazaj</button>
+    </section>
+  </main>
+  <footer class="footer">
+    <p>&copy; 2025 INOX CENTER d.o.o. Vse pravice pridržane.</p>
+  </footer>
+</body>
+</html>
